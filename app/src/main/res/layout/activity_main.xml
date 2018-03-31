@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.e.puja.buisnessside.MainActivity">
+
+    <LinearLayout
+        android:paddingTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="2dp">
+
+        <ImageView
+            android:src="@drawable/smartkisan"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal" />
+        <EditText
+            android:background="@drawable/edittextstyle"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:inputType="number"
+            android:hint="Mobile"
+            android:ems="10"
+            android:id="@+id/Userid"/>
+
+        <EditText
+            android:background="@drawable/edittextstyle"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:id="@+id/Password"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:visibility="invisible"
+            android:layout_height="88dp">
+            <Spinner
+                android:background="@drawable/edittextstyle"
+                android:id="@+id/disVen"
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="47dp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonstyleselector"
+            android:text="Log In"
+            android:textColor="#fff" />
+    </LinearLayout>
+    </RelativeLayout>
